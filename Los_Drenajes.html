@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>México Bajo el Agua</title>
+
+    <!-- ICONOS (Google Material Icons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #e9f2f7;
+      }
+
+      /* Menú lateral */
+      iframe {
+        width: 250px;
+        height: 100vh;
+        border: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+
+      /* Contenido principal */
+      .content {
+        margin-left: 280px;
+        padding: 25px;
+      }
+
+      /* Encabezado principal */
+      .title-box {
+        background: linear-gradient(135deg, #1a73e8, #0b4c8c);
+        padding: 30px;
+        border-radius: 14px;
+        color: white;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+      }
+
+      .title-box h1 {
+        margin: 0;
+      }
+
+      .title-box p {
+        margin: 5px 0 0 0;
+        font-size: 18px;
+      }
+
+      /* SECCIONES */
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #0b4c8c;
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+      /* Tarjetas */
+      .card {
+        background: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        border-left: 5px solid #1a73e8;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: #1a73e8;
+      }
+
+      .icon {
+        font-size: 32px;
+        color: #1a73e8;
+      }
+
+      .card p {
+        text-align: justify;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      .card ul {
+        margin: 10px 0 0 20px;
+      }
+
+      .card li {
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Imagenes */
+      .logo {
+        width: 120px;
+      }
+
+      .os-img {
+        width: 40%;
+        border-radius: 10px;
+      }
+
+      .card div {
+        width: 60%;
+      }
+
+      /* Para invertir lado de la imagen */
+      .card.reverse {
+        flex-direction: row-reverse;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .card {
+          flex-direction: column;
+        }
+
+        .card.reverse {
+          flex-direction: column;
+        }
+
+        .os-img {
+          width: 100%;
+        }
+
+        .card div {
+          width: 100%;
+        }
+
+        .title-box {
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Menú externo -->
+    <iframe src="Menu.html"></iframe>
+
+    <!-- Contenido -->
+    <div class="content">
+
+      <!-- Encabezado principal -->
+      <div class="title-box">
+        <img src="Logo.png" alt="Logo" class="logo">
+        <div>
+          <h1>⭐ México Bajo el Agua</h1>
+          <p>Proyecto informativo sobre el drenaje y prevención de inundaciones en México</p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: ¿Qué es México Bajo el Agua? -->
+      <h2 class="section-title"><span class="material-icons icon">water</span> ¿Qué es México Bajo el Agua?</h2>
+
+      <div class="card">
+        <img src="os1.png" alt="Imagen del proyecto 1" class="os-img">
+        <div>
+          <h3>Sobre el proyecto</h3>
+          <p>
+            México Bajo el Agua es un proyecto integral dedicado a informar y crear conciencia sobre la importancia del mantenimiento y la modernización del sistema de drenaje en México. 
+            Nuestro objetivo principal es sensibilizar a la población acerca de los riesgos asociados a la infraestructura obsoleta, el crecimiento urbano desordenado y la falta de prevención frente a inundaciones. 
+            Además, buscamos proveer información confiable y accesible para que tanto ciudadanos como autoridades puedan tomar decisiones más acertadas en materia de infraestructura urbana y protección civil.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: Encuesta -->
+      <h2 class="section-title"><span class="material-icons icon">assignment</span> Antes de comenzar</h2>
+
+      <div class="card">
+        <img src="os2.jpg" alt="Imagen del proyecto 2" class="os-img">
+        <div>
+          <h3>Tu opinión es importante</h3>
+          <p>
+            Para poder entender mejor la situación de cada zona, solicitamos tu participación en nuestra encuesta. Esta nos permitirá recopilar datos reales sobre el estado de los drenajes, la frecuencia de inundaciones y las necesidades de la comunidad. 
+            La información obtenida será utilizada exclusivamente con fines educativos y de mejora de la infraestructura.
+            <br><br>
+            👉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSetxKFDrNcYYGKq9ef-DOo97KJJd13a0JG2OcEQfW00CAl3RQ/viewform?usp=dialog" target="_blank">
+            Click aquí para abrir la encuesta</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: ¿Sabías que...? -->
+      <h2 class="section-title"><span class="material-icons icon">lightbulb</span> ¿Sabías que...?</h2>
+
+      <div class="card">
+        <img src="os3.jpg" alt="Imagen del proyecto 3" class="os-img">
+        <div>
+          <h3>Un dato impactante</h3>
+          <p>
+            La Ciudad de México fue construida sobre un lago antiguo, lo que genera un suelo altamente susceptible a inundaciones y hundimientos. Esto provoca que el agua no se filtre fácilmente y que la acumulación de lluvias intensas genere problemas recurrentes en el drenaje.
+            Además, el crecimiento urbano acelerado, la impermeabilización del suelo y la insuficiente infraestructura pluvial agravan la situación, haciendo que incluso lluvias moderadas puedan ocasionar inundaciones locales que afecten hogares, calles y negocios.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: Causas del problema -->
+      <h2 class="section-title"><span class="material-icons icon">warning</span> ¿Por qué existe este problema?</h2>
+
+      <div class="card">
+        <div>
+          <h3>Factores urbanos</h3>
+          <p>
+            El principal motivo del problema radica en la urbanización sin planeación y la infraestructura de drenaje obsoleta. La acumulación de basura en coladeras y alcantarillas, así como la construcción en zonas de riesgo, genera bloqueos y deterioro del sistema de drenaje. Esto provoca que el agua de lluvia se acumule y cause inundaciones, afectando la seguridad y la calidad de vida de los ciudadanos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Factores económicos</h3>
+          <p>
+            Las inundaciones generan pérdidas económicas significativas en hogares, comercios y vehículos. Las comunidades más vulnerables sufren los impactos más graves, ya que carecen de recursos para reparar daños y prevenir futuras afectaciones. Además, la falta de inversión en mantenimiento del drenaje y en educación ambiental perpetúa los problemas, aumentando el riesgo de desastres recurrentes.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: Consecuencias -->
+      <h2 class="section-title"><span class="material-icons icon">error</span> Consecuencias</h2>
+
+      <div class="card">
+        <img src="os4.jpg" alt="Imagen del proyecto 4" class="os-img">
+        <div>
+          <h3>Impactos directos</h3>
+          <p>
+            La falta de mantenimiento del drenaje y la deficiente infraestructura generan inundaciones frecuentes, malos olores, proliferación de plagas y enfermedades. Esto afecta directamente la vida cotidiana de las personas, la seguridad de los hogares y la economía local. Las inundaciones también pueden dañar carreteras, mobiliario urbano y espacios verdes, incrementando los costos de reparación y recuperación.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: Mantenimiento -->
+      <h2 class="section-title"><span class="material-icons icon">build</span> Mantenimiento Preventivo</h2>
+
+      <div class="card reverse">
+        <img src="os7.WEBP" alt="Imagen del proyecto 7" class="os-img">
+        <div>
+          <h3>A nivel individual</h3>
+          <p>
+            Los ciudadanos pueden contribuir activamente al mantenimiento del drenaje mediante la instalación de filtros en coladeras, limpieza periódica de rejillas, no arrojar basura al drenaje y separar los desechos orgánicos e inorgánicos. Estas acciones simples ayudan a reducir riesgos y mejorar la eficiencia del sistema pluvial en cada barrio.
+          </p>
+        </div>
+      </div>
+
+      <div class="card reverse">
+        <img src="os6.jpg" alt="Imagen del proyecto 6" class="os-img">
+        <div>
+          <h3>A nivel comunitario</h3>
+          <p>
+            La colaboración comunitaria es clave. Realizar campañas de limpieza, reportar coladeras obstruidas, retirar escombros y organizar jornadas de educación ambiental permite que los vecindarios sean más resilientes ante inundaciones y fomenten la responsabilidad compartida por el cuidado de la infraestructura urbana.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="os5.jpg" alt="Imagen del proyecto 5" class="os-img">
+        <div>
+          <h3>Tecnologías modernas</h3>
+          <p>
+            Existen soluciones innovadoras que pueden mitigar los efectos de las lluvias: techos verdes, pavimentos permeables, jardines de lluvia, captación de agua pluvial y sistemas de almacenamiento de agua de lluvia. Estas tecnologías no solo mejoran el drenaje, sino que también contribuyen a la sostenibilidad urbana, la regulación de temperatura y la calidad ambiental de la ciudad.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

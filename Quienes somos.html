@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiénes Somos</title>
+
+    <!-- ICONOS Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      :root {
+        --primary: #0a4d68;
+        --primary-light: #0f6e8c;
+        --bg: #f5f7fa;
+        --text: #2c3e50;
+        --card-bg: #ffffff;
+        --radius: 14px;
+        --shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      iframe {
+        width: 260px;
+        height: 100vh;
+        border: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        box-shadow: 4px 0 12px rgba(0,0,0,0.1);
+      }
+
+      .content {
+        margin-left: 260px;
+        padding: 40px 50px;
+      }
+
+      /* ENCABEZADO */
+      .header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        padding: 40px;
+        border-radius: var(--radius);
+        color: #fff;
+        box-shadow: var(--shadow);
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .header .material-icons {
+        font-size: 50px;
+        opacity: 0.9;
+      }
+
+      .header h1 {
+        margin: 10px 0 0;
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      /* TARJETAS GENERALES */
+      .card {
+        background: var(--card-bg);
+        padding: 30px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .card.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .card img {
+        width: 40%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .card div {
+        width: 60%;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 24px;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card p {
+        text-align: justify;
+        line-height: 1.7;
+      }
+
+      /* SECCIÓN DEL EQUIPO */
+      .equipo-title {
+        margin-top: 60px;
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--primary);
+        text-align: center;
+      }
+
+      .team-container {
+        margin-top: 40px;
+      }
+
+      .team-member {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      .team-member img {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        object-fit: cover;
+        box-shadow: var(--shadow);
+      }
+
+      .team-info h4 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .team-info p {
+        margin: 5px 0;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 900px) {
+        iframe {
+          display: none;
+        }
+
+        .content {
+          margin-left: 0;
+          padding: 20px;
+        }
+
+        .card, .card.reverse {
+          flex-direction: column;
+        }
+
+        .card img, .card div {
+          width: 100%;
+        }
+
+        .team-member {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .team-member img {
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <iframe src="Menu.html"></iframe>
+
+    <div class="content">
+
+      <!-- ENCABEZADO -->
+      <div class="header">
+        <span class="material-icons">groups</span>
+        <h1>Quiénes Somos</h1>
+        <p>Conoce nuestro propósito, visión y compromiso con la comunidad</p>
+      </div>
+
+      <!-- TARJETAS PRINCIPALES (h1, h2, h3, h4) -->
+      <div class="card">
+        <img src="h1.png" alt="Imagen h1">
+        <div>
+          <h3><span class="material-icons">info</span> Sobre Nosotros</h3>
+          <p>
+            Somos un grupo de estudiantes universitarios comprometidos con mejorar el entorno a través de la difusión de información,
+            la creación de contenido visual y la propuesta de soluciones que aporten al bienestar de la comunidad.
+          </p>
+        </div>
+      </div>
+
+      <div class="card reverse">
+        <img src="h2.jpg" alt="Imagen h2">
+        <div>
+          <h3><span class="material-icons">campaign</span> Objetivo de la Comunicación</h3>
+          <p>
+            Nuestro objetivo es concientizar sobre la importancia del mantenimiento adecuado de los drenajes,
+            ya que su descuido puede afectar la salud, la calidad de vida y el medio ambiente.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="h3.jpg" alt="Imagen h3">
+        <div>
+          <h3><span class="material-icons">school</span> Emisor</h3>
+          <p>
+            Somos estudiantes universitarios comprometidos con la investigación, comunicación
+            y difusión de información de valor.
+          </p>
+        </div>
+      </div>
+
+      <div class="card reverse">
+        <img src="h4.jpg" alt="Imagen h4">
+        <div>
+          <h3><span class="material-icons">groups_3</span> Receptor</h3>
+          <ul>
+            <li>Personas de escasos recursos.</li>
+            <li>Población mexicana en general.</li>
+            <li>Gobierno federal, estatal y municipal.</li>
+            <li>Plomeros y especialistas en drenaje.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ENCUESTA -->
+      <div class="card">
+        <div>
+          <h3><span class="material-icons">assignment</span> Encuesta de Satisfacción</h3>
+          <p>Tu opinión es fundamental para mejorar nuestro proyecto.</p>
+          <a class="btn-link" href="https://docs.google.com/forms/d/e/1FAIpQLSciuLHrakd-Z_Bomt3ewycSIfXQZaxgyokgFVepvVU60aAFKA/viewform"
+             target="_blank">
+            <span class="material-icons">edit</span> Responder Encuesta
+          </a>
+        </div>
+      </div>
+
+      <!-- =======================
+           SECCIÓN DEL EQUIPO
+      ======================= -->
+      <h2 class="equipo-title">Descubre a nuestro equipo</h2>
+
+      <div class="team-container">
+
+        <!-- VALERIA -->
+        <div class="team-member">
+          <img src="M.png" alt="Valeria">
+          <div class="team-info">
+            <h4>Valeria Cruz Morales</h4>
+            <p><strong>Investigadora</strong></p>
+            <p>Realizó investigación para la página web.</p>
+          </div>
+        </div>
+
+        <!-- DAVID -->
+        <div class="team-member">
+          <img src="h.png" alt="David">
+          <div class="team-info">
+            <h4>David Segura Zequeira</h4>
+            <p><strong>Investigador</strong></p>
+            <p>Realizó investigación para la página web.</p>
+          </div>
+        </div>
+
+        <!-- MARIA FERNANDA -->
+        <div class="team-member">
+          <img src="M.png" alt="Maria Fernanda">
+          <div class="team-info">
+            <h4>Maria Fernanda Vizueth Fernández</h4>
+            <p><strong>Investigadora y Diseñadora</strong></p>
+            <p>Realizó investigación para la página web, Realizo el diselo del logo de la pagina</p>
+          </div>
+        </div>
+
+        <!-- ESTRELLA -->
+        <div class="team-member">
+          <img src="M.png" alt="Estrella">
+          <div class="team-info">
+            <h4>Estrella García Medina</h4>
+            <p><strong>Desarrolladora de la Pagina web</strong></p>
+            <p>Realizó la pagina web, se encargo de la distribución de información, creación del diseño de cada parte de la pagina.</p>
+          </div>
+        </div>
+
+        <!-- JAVIER -->
+        <div class="team-member">
+          <img src="h.png" alt="Javier">
+          <div class="team-info">
+            <h4>Javier Roberto Terrazas Palmero</h4>
+            <p><strong>Investigador y Redactor </strong></p>
+            <p>Realizó investigación para la página web. Se encargo de la correcta redaccion de la pagina.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
+

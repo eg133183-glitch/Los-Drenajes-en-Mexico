@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cuidado del Medio Ambiente — México Bajo el Agua</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      :root{
+        --primary:#0a4d68;
+        --accent:#1a73e8;
+        --muted:#6b7a86;
+        --bg:#f6fbfd;
+        --card:#ffffff;
+        --radius:12px;
+        --shadow: 0 10px 25px rgba(12,34,50,0.08);
+      }
+
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:var(--bg);
+        color: #123;
+        -webkit-font-smoothing:antialiased;
+      }
+
+      /* Sidebar (external menu) */
+      iframe{
+        position:fixed;
+        left:0;
+        top:0;
+        width:260px;
+        height:100vh;
+        border:0;
+        box-shadow: 4px 0 18px rgba(0,0,0,0.06);
+        background:#fff;
+      }
+
+      /* Page content */
+      .container{
+        margin-left:280px;
+        padding:36px;
+        max-width:1100px;
+      }
+
+      /* Header */
+      .hero{
+        background: linear-gradient(135deg,var(--primary), var(--accent));
+        color:white;
+        padding:28px;
+        border-radius:var(--radius);
+        box-shadow:var(--shadow);
+        display:flex;
+        gap:18px;
+        align-items:center;
+      }
+
+      .hero .icon{
+        background: rgba(255,255,255,0.12);
+        width:84px;
+        height:84px;
+        border-radius:16px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow: inset 0 -6px 18px rgba(0,0,0,0.06);
+      }
+
+      .hero h1{
+        margin:0;
+        font-size:26px;
+        letter-spacing:0.2px;
+      }
+
+      .hero p{
+        margin:6px 0 0;
+        color:rgba(255,255,255,0.95);
+      }
+
+      .grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+      }
+
+      .card{
+        background:var(--card);
+        padding:20px;
+        border-radius:12px;
+        box-shadow:var(--shadow);
+        border-left:4px solid rgba(26,115,232,0.08);
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+
+      .card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 18px 35px rgba(12,34,50,0.08);
+      }
+
+      .card h3{
+        margin:0 0 8px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        color:var(--primary);
+        font-size:20px;
+      }
+
+      .card .material-icons{
+        color:var(--accent);
+        font-size:28px;
+      }
+
+      .muted{
+        color:var(--muted);
+        line-height:1.6;
+      }
+
+      ul, ol {
+        padding-left: 18px;
+        margin: 8px 0;
+      }
+
+      .cta{
+        display:inline-flex;
+        gap:10px;
+        align-items:center;
+        background:var(--accent);
+        color:#fff;
+        padding:10px 14px;
+        border-radius:10px;
+        text-decoration:none;
+        box-shadow: 0 8px 20px rgba(26,115,232,0.12);
+        margin-top: 12px;
+      }
+
+      @media (max-width:900px){
+        iframe{display:none}
+        .container{margin-left:0;padding:20px}
+        .grid{grid-template-columns:1fr}
+        .hero{flex-direction:column;align-items:flex-start}
+        .hero .icon{width:64px;height:64px}
+      }
+
+      .small{font-size:14px;color:var(--muted)}
+      .spaced{margin-top:12px}
+    </style>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <iframe src="Menu.html" title="Menú"></iframe>
+
+    <main class="container" role="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="titulo-hero">
+        <div class="icon" aria-hidden="true">
+          <span class="material-icons" style="font-size:44px;color:white">eco</span>
+        </div>
+
+        <div>
+          <h1 id="titulo-hero">Cuidado del Medio Ambiente</h1>
+          <p class="small">Guía práctica: 3R’s, áreas verdes, composta y sembrado</p>
+        </div>
+      </section>
+
+      <!-- Contenido -->
+      <div class="grid spaced">
+
+        <!-- 3R's -->
+        <article class="card">
+          <h3><span class="material-icons">recycling</span> ¿Qué son las 3R’s?</h3>
+          <p class="muted">
+            Las 3R’s (Reducir, Reutilizar y Reciclar) son una estrategia ambiental que busca disminuir el impacto negativo que generamos en el planeta mediante tres acciones clave:
+          </p>
+
+          <ul>
+            <li><strong>Reducir:</strong> Disminuir la cantidad de basura que producimos diariamente.</li>
+            <li><strong>Reutilizar:</strong> Dar un nuevo uso a los objetos que todavía pueden servir antes de desecharlos.</li>
+            <li><strong>Reciclar:</strong> Transformar los materiales en nuevos productos.</li>
+          </ul>
+           
+<img src="3r.jpg" alt="3r" class="section-img"> <p>
+          <a class="cta" href="https://youtu.be/vnc6iKg_sRU?si=vXqU-M0lIKFtVoUB" target="_blank">
+            <span class="material-icons">play_circle</span> Ver video
+          </a>
+        </article>
+
+        <!-- Promover áreas verdes -->
+        <article class="card">
+          <h3><span class="material-icons">park</span> Promover áreas verdes</h3>
+          <p class="muted">
+            Las áreas verdes son espacios con vegetación que ayudan a mejorar la salud ambiental y social. Promoverlas implica acciones como:
+          </p>
+          <ul>
+            <li>Plantar árboles en escuelas, colonias o parques.</li>
+            <li>Mantener limpias las zonas con plantas y pasto.</li>
+            <li>Crear pequeños jardines comunitarios.</li>
+            <li>Colocar plantas en patios, entradas y azoteas.</li>
+            <li>Participar en campañas de reforestación.</li>
+          </ul>
+          <img src="4r.jpg" alt="3r" class="section-img">
+          <p class="muted">
+            Beneficios: reducen la contaminación del aire, bajan la temperatura, mejoran la salud física y mental, y favorecen la biodiversidad.
+          </p>
+        </article>
+
+        <!-- Cómo hacer composta -->
+        <article class="card">
+          <h3><span class="material-icons">eco</span> ¿Cómo hacer tu composta?</h3>
+          <p class="muted">
+            La composta es un abono natural hecho a partir de desechos orgánicos. Hacerla en casa es fácil:
+          </p>
+          <ol>
+            <li><strong>Prepara un contenedor:</strong> caja de madera, cubeta o espacio en tu jardín.</li>
+            <li><strong>Agrega materiales verdes:</strong> restos húmedos como cáscaras de frutas, verduras, café, cáscaras de huevo molidas.</li>
+            <li><strong>Agrega materiales secos:</strong> hojas secas, papel troceado, cartón, ramitas.</li>
+            <li><strong>Mantén la mezcla aireada:</strong> remueve con una pala cada 3–4 días.</li>
+            <li><strong>Humedad adecuada:</strong> debe sentirse como una esponja húmeda. Ajusta agregando material seco o húmedo según sea necesario.</li>
+          </ol>
+          <img src="5r.jpg" alt="3r" class="section-img">
+
+          <p class="muted">
+            Tiempo de descomposición: entre 1 y 3 meses. La composta estará lista cuando tenga olor a tierra mojada y textura suave.
+          </p>
+
+          <a class="cta" href="https://youtu.be/cmr30RtiNSQ?si=_yetFgUWZC6zKl20" target="_blank">
+            <span class="material-icons">play_circle</span> Ver video
+          </a>
+        </article>
+
+        <!-- Capacitación de sembrado -->
+        <article class="card">
+          <h3><span class="material-icons">school</span> Capacitación de sembrado</h3>
+          <p class="muted">
+            Consiste en enseñar técnicas básicas para sembrar y cuidar plantas. Puede aplicarse en escuelas, comunidades o incluso en casa.
+          </p>
+          <ul>
+            <li>Identificación de suelos (arenoso, arcilloso, mixto).</li>
+            <li>Cómo preparar la tierra y utilizar composta.</li>
+            <li>Tipos de semillas y épocas de siembra.</li>
+            <li>Cómo regar sin desperdiciar agua.</li>
+            <li>Construcción de huertos urbanos.</li>
+            <li>Control natural de plagas, trasplante y cuidados.</li>
+          </ul>
+          <img src="6r.jpg" alt="3r" class="section-img">
+
+          <p class="muted">
+            La capacitación promueve la autosuficiencia, fomenta la educación ambiental, mejora el uso del agua
+            y crea comunidades más verdes y conscientes.
+          </p>
+
+          <a class="cta" href="https://youtu.be/HUKkF8jVYmY?si=1tiboO699kY67gUM" target="_blank">
+            <span class="material-icons">play_circle</span> Ver video
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Recursos y llamada a la acción -->
+      <div style="margin-top:22px;display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+        <span class="badge">Guía práctica</span>
+        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSetxKFDrNcYYGKq9ef-DOo97KJJd13a0JG2OcEQfW00CAl3RQ/viewform?usp=dialog" target="_blank">
+          <span class="material-icons">edit</span>
+          Completa la encuesta sobre tu drenaje
+        </a>
+        <a class="cta" href="composta.html" style="background:#0a4d68">
+          <span class="material-icons">download</span>
+          Descargar guía (próx.)
+        </a>
+      </div>
+
+    </main>
+  </body>
+</html>

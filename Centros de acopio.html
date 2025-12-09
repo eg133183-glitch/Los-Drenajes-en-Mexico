@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Centros de Acopio</title>
+
+  <!-- ICONOS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #e9f2f7;
+    }
+
+    /* Menú lateral */
+    iframe {
+      width: 250px;
+      height: 100vh;
+      border: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    /* Contenido principal */
+    .content {
+      margin-left: 280px;
+      padding: 25px;
+    }
+
+    /* ENCABEZADO */
+    .title-box {
+      background: linear-gradient(135deg, #1a73e8, #0b4c8c);
+      padding: 30px;
+      border-radius: 14px;
+      color: white;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .title-box img {
+      width: 120px;
+    }
+
+    .title-box h1 {
+      margin: 0;
+    }
+
+    .title-box p {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+    /* Secciones */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #0b4c8c;
+      font-size: 26px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 32px;
+      color: #1a73e8;
+    }
+
+    /* Tarjetas */
+    .card {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      border-left: 5px solid #1a73e8;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .card.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+
+    .card p, .card ul {
+      text-align: justify;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Imágenes */
+    .os-img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .card div {
+      width: 60%;
+    }
+
+    /* Tabla */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    th {
+      background: #1a73e8;
+      color: white;
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .card {
+        flex-direction: column;
+      }
+
+      .card.reverse {
+        flex-direction: column;
+      }
+
+      .os-img {
+        width: 100%;
+      }
+
+      .card div {
+        width: 100%;
+      }
+
+      .title-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Menú externo -->
+  <iframe src="Menu.html"></iframe>
+
+  <div class="content">
+
+    <!-- Encabezado -->
+    <div class="title-box">
+      <img src="Logo.png" alt="Logo del proyecto">
+      <div>
+        <h1>♻️ Centros de Acopio</h1>
+        <p>Guía completa sobre reciclaje y puntos de recolección en Hidalgo</p>
+      </div>
+    </div>
+
+    <!-- ¿Qué son? -->
+    <h2 class="section-title"><span class="material-icons icon">recycling</span> ¿Qué son los Centros de Acopio?</h2>
+
+    <div class="card">
+      <div>
+        <h3>Definición</h3>
+        <p>
+          Son espacios destinados a recibir, clasificar y almacenar temporalmente materiales reciclables
+          y residuos especiales. Su función principal es evitar que estos desechos terminen en lugares
+          inapropiados como ríos, calles o tiraderos clandestinos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Funciones -->
+    <h2 class="section-title"><span class="material-icons icon">check_circle</span> Funciones principales</h2>
+
+    <div class="card">
+      <div>
+        <h3>¿Qué hacen?</h3>
+        <ul>
+          <li>Promueven el reciclaje y la economía circular.</li>
+          <li>Reducen la contaminación en la comunidad.</li>
+          <li>Brindan educación ambiental.</li>
+          <li>Apoyan campañas de recolección.</li>
+          <li>Manejan residuos especiales de forma adecuada.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Materiales -->
+    <h2 class="section-title"><span class="material-icons icon">inventory</span> Materiales que aceptan</h2>
+
+    <div class="card">
+      <div>
+        <h3>Materiales reciclables</h3>
+        <ul>
+          <li>PET</li>
+          <li>Papel y cartón</li>
+          <li>Plástico rígido</li>
+          <li>Vidrio</li>
+          <li>Aluminio</li>
+          <li>Tetrapack</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <h3>Residuos especiales</h3>
+        <ul>
+          <li>Pilas y baterías</li>
+          <li>Electrónicos</li>
+          <li>Aceite de cocina usado</li>
+          <li>Medicamentos caducados</li>
+          <li>Tóner y cartuchos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tipos -->
+    <h2 class="section-title"><span class="material-icons icon">category</span> Tipos de Centros de Acopio</h2>
+
+    <div class="card">
+      <div>
+        <h3>Clasificación</h3>
+        <ul>
+          <li>Permanentes</li>
+          <li>Temporales</li>
+          <li>Escolares</li>
+          <li>Industriales</li>
+          <li>Comunitarios</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pachuca -->
+    <h2 class="section-title"><span class="material-icons icon">location_on</span> Centros de Acopio en Pachuca</h2>
+
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Ubicación</th>
+        <th>Materiales aceptados</th>
+      </tr>
+
+      <tr>
+        <td>Punto Verde Pachuca</td>
+        <td>San Bartolo, Plan de San Luis</td>
+        <td>PET, cartón, Tetra Pak, aceite vegetal</td>
+      </tr>
+
+      <tr>
+        <td>Bioparque de Convivencias</td>
+        <td>Pachuca</td>
+        <td>Plásticos, vidrio, aluminio, electrónicos</td>
+      </tr>
+
+      <tr>
+        <td>Parque Ecológico Cubitos</td>
+        <td>Vicente Segura #100</td>
+        <td>PET, aluminio, cartón, tapas</td>
+      </tr>
+
+      <tr>
+        <td>Centro de Acopio El Pariente</td>
+        <td>Parque de Poblamiento</td>
+        <td>Chatarra y residuos varios</td>
+      </tr>
+    </table>
+
+    <!-- Tolcayuca -->
+    <h2 class="section-title"><span class="material-icons icon">location_city</span> Centros de Acopio en Tolcayuca</h2>
+
+    <div class="card">
+      <div>
+        <h3>Centro Municipal</h3>
+        <ul>
+          <li>Cerca de la presidencia municipal</li>
+          <li>PET, aluminio, cartón, vidrio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <h3>Puntos Escolares</h3>
+        <ul>
+          <li>Primarias y secundarias</li>
+          <li>PET, tapitas, papel</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <h3>Centro Comunitario</h3>
+        <ul>
+          <li>Ubicación vecinal</li>
+          <li>PET, tapitas, cartón</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Recomendaciones -->
+    <h2 class="section-title"><span class="material-icons icon">tips_and_updates</span> Recomendaciones antes de llevar materiales</h2>
+
+    <div class="card">
+      <div>
+        <h3>Antes de ir</h3>
+        <ul>
+          <li>Lava y seca botellas.</li>
+          <li>Aplasta el PET.</li>
+          <li>Separa por tipos.</li>
+          <li>Revisa horarios.</li>
+          <li>Protege electrónicos o aceite usado.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
